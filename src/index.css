@@ -1,0 +1,15 @@
+/* src/index.css */
+
+/* Reset básico de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos base del body */
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
