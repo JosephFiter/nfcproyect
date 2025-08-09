@@ -1,14 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingPage from './LandingPage';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import PasswordPage from "./PasswordPage";
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/password" element={<PasswordPage />} />
+    </Routes>
   );
 };
 
