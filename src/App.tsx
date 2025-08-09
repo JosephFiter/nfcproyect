@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
-import PasswordPage from "./PasswordPage";
+import PasswordPage from "./PasswordPage.tsx";
 
 const App: React.FC = () => {
   return (
