@@ -6,7 +6,7 @@ const PasswordPage: React.FC = () => {
 
   const handleConfirm = () => {
     if (password === correctPassword) {
-      window.location.href = "https://youtube.com";
+      window.location.href = "https://youtu.be/tb6luKUDW0o";
     } else {
       alert("Contraseña incorrecta");
     }
