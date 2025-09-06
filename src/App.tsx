@@ -1,15 +1,15 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import PasswordPage from "./Passwordpage.tsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import RedirectPage from "./RedirectPage";
 
-const App: React.FC = () => {
+function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/password" element={<PasswordPage />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        {/* Ruta dinámica que captura el número */}
+        <Route path="/:id" element={<RedirectPage />} />
+      </Routes>
+    </BrowserRouter>
   );
-};
+}
 
 export default App;
